@@ -1,0 +1,51 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real pn,dvis,cvis,bol,bt
+		inteiro esc, besc
+		escreva("Qual é o preço do produto? ")
+		leia(pn)
+		se(pn<=0){
+			escreva("valor invalido")
+		}
+		senao{
+			escreva("Escolhe o metodo de pagamento: 1.Dinheiro/cheque a vista com 10% off 2.Cartao de credito a vista com 15% off 3.Boleto ")
+			leia(esc)
+			se(esc>0 e esc<4){
+				se(esc==1){ 
+					dvis=pn*0.9
+				 	escreva("Valor é "+dvis)    
+				}
+				senao se(esc==2){
+					cvis=pn*0.85
+					escreva("Valor é "+cvis)	
+				}
+				senao{
+					escreva("Escolha as opçoes: 1. dividido em duas vezes sem juros 2.dividido em tres vezes com 3% de juros 3.dividido em quatros vezes com 4% de juros ")
+					leia(besc)
+					se(besc>0 e besc<4){
+						se(besc==1){
+							escreva("Valor é "+ pn)
+						}
+						senao se(besc==2){
+							bt=pn*1.03
+							escreva("Valor é "+bt)
+						}
+						senao{
+							bt=pn*1.04
+							escreva("Valor é "+bt)
+						}
+					}
+					senao{
+						escreva("Valor invalido ")	
+					}	
+				}  	
+			}
+			senao{
+				escreva("valores invalidos ")			
+			}
+		}	
+	}
+}
