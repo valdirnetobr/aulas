@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real desc,dia,apa,vlp,vlt,vltm,vd
+			
+    		escreva("qual o valor da diaria? ")
+		leia(dia)
+		escreva("qual e o número de quartos? ")
+		leia(apa)
+		se(dia<=0 ou apa<=0){
+			escreva("valores invalidos")	
+		}
+		senao{
+			desc=0.75
+			vlp=dia*desc
+			vlt=apa*vlp
+			vltm=vlt*0.5
+			vd=(dia*apa)-vlt
+			escreva("valor da diaria com desconto é "+vlp)
+			escreva("valor total a ser arrecadado é "+vlt)
+			escreva("valor da metade dos quartos é "+vltm)
+			escreva("valor que o hotel perdeu em virtude da promoção "+vd)
+		}
+	}
+}
