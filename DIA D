@@ -1,0 +1,52 @@
+
+
+package aula;
+import javax.swing.JOptionPane;
+
+public class Aula {
+
+    public static void main(String[] args) {
+       
+   
+        for (int i = 1, j = 5; i>=1 && j<=5 ; i++,j--) {
+if (i==j){            
+JOptionPane.showMessageDialog(null, i);
+        }
+        
+    ----------------------------------------------------------------------
+
+ double f ;
+        for (int i = 10; i >= 0; i--) {
+            f = i*1.8+32;
+            JOptionPane.showMessageDialog(null, f);
+
+   ----------------------------------------------------------------------------    
+       /* for (int velho = 55, novo = 50; velho >= 0 && novo >= 0; velho--, novo--) {
+            if(velho == (2*novo)) {
+                JOptionPane.showMessageDialog(null,velho);
+            i+= 3 == i = i + 3 
+            i-= 4 == i = i - 4
+            }
+        }*/
+       /* int soma= 0;
+        for (int i = 200; i >= 0; i -= 2) {
+            soma  += i;   
+            
+        }
+        JOptionPane.showMessageDialog(null,soma);
+        }*/
+-----------------------------------------------------------------------
+  int soma = 0;
+        
+        for (int i = 200; i >= 0; i-=2) {
+            soma += i;
+        }
+        
+        JOptionPane.showMessageDialog(null, soma);       
+  
+       
+       
+       
+       
+    }
+}
